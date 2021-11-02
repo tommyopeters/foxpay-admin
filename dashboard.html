@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/8509b10269.js"></script>
+    <title>Dashboard</title>
+  </head>
+  <body class="main">
+    <aside>
+      <a href="" class="logo image-control">
+        <img src="./images/logo-white.png" alt="" />
+      </a>
+      <ul class="nav main-nav">
+        <li class="nav-item active">
+          <i class="fal fa-analytics"></i>
+          <span>Dashboard</span>
+        </li>
+        <li class="nav-item">
+          <i class="fal fa-users"></i>
+          <span>Users</span>
+        </li>
+        <li class="nav-item">
+          <i class="fal fa-history"></i>
+          <span>Transactions</span>
+        </li>
+        <li class="nav-item">
+          <i class="fal fa-piggy-bank"></i>
+          <span>Savings</span>
+        </li>
+        <li class="nav-item">
+          <i class="fal fa-percentage"></i>
+          <span>Loans</span>
+        </li>
+        <li class="nav-item">
+          <i class="fal fa-building"></i>
+          <span>Investments</span>
+        </li>
+        <li class="nav-item">
+          <i class="fal fa-money-bill"></i>
+          <span>Payments</span>
+        </li>
+        <li class="nav-item">
+          <i class="fal fa-window"></i>
+          <span>Services</span>
+        </li>
+        <li class="nav-item">
+          <i class="fal fa-cog"></i>
+          <span>Settings</span>
+        </li>
+      </ul>
+    </aside>
+    <div class="wrapper">
+      <header>
+        <h2>Welcome</h2>
+        <div class="user">
+          <div class="user-intro">Hi <span class="user-name">Pade</span></div>
+          <div class="user-image image-control"><img src="" alt="" /></div>
+          <i class="fas fa-angle-down"></i>
+        </div>
+      </header>
+      <main class="dashboard">
+        <section class="user">
+          <div class="section-header">
+            <h3>User</h3>
+            <div class="section-header-actions">
+              <div class="btn export-btn">
+                <span>Generate Report</span>
+                <i class="fal fa-file-export"></i>
+              </div>
+              <div class="filters">
+                <span>Weekly</span>
+                <i class="fal fa-angle-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="section-body">
+            <div class="chart">
+              <div class="chart-header">
+                <span class="chart-title">All Users</span>
+                <div class="chart-numbers">
+                  <span class="top">40k</span>
+                  <span class="bottom positive">+1.2%</span>
+                </div>
+              </div>
+              <div class="chart-body"></div>
+            </div>
+            <div class="chart">
+              <div class="chart-header">
+                <span class="chart-title">New Users</span>
+                <div class="chart-numbers">
+                  <span class="top">40k</span>
+                  <span class="bottom positive">+1.2%</span>
+                </div>
+              </div>
+              <div class="chart-body"></div>
+            </div>
+            <div class="chart">
+              <div class="chart-header">
+                <span class="chart-title">Returning Users</span>
+                <div class="chart-numbers">
+                  <span class="top">40k</span>
+                  <span class="bottom positive">+1.2%</span>
+                </div>
+              </div>
+              <div class="chart-body"></div>
+            </div>
+            <div class="chart chart-long">
+              <div class="chart-header">
+                <span class="chart-title">Active Users</span>
+              </div>
+              <div class="chart-body"></div>
+            </div>
+            <div class="chart">
+              <div class="chart-header">
+                <span class="chart-title">Devices</span>
+              </div>
+              <div class="chart-body"></div>
+            </div>
+          </div>
+        </section>
+        <section class="transactions">
+          <div class="section-header">
+            <h3>Transactions</h3>
+          </div>
+          <div class="section-body">
+            <div class="transaction-chart chart">
+              <div class="chart-header">
+                <span class="chart-title">Devices</span>
+              </div>
+              <div class="chart-body"></div>
+            </div>
+            <div class="transaction-card chart">
+              <div class="chart-header"><span class="chart-title">Transaction Value</span></div>
+              <div class="transaction-card-body">
+                <div class="row">
+                  <div class="row-title">Payments</div>
+                  <div class="row-value">₦107,090,600.00</div>
+                </div>
+                <div class="row">
+                  <div class="row-title">Loans</div>
+                  <div class="row-value">₦107,090,600.00</div>
+                </div>
+                <div class="row">
+                  <div class="row-title">Savings</div>
+                  <div class="row-value">₦107,090,600.00</div>
+                </div>
+                <div class="row">
+                  <div class="row-title">Investments</div>
+                  <div class="row-value">₦107,090,600.00</div>
+                </div>
+                <div class="bottom-row">
+                  <div class="bottom-row-cards">
+                    <small>TOTAL VALUE</small>
+                    <p>15M</p>
+                  </div>
+                  <div class="bottom-row-cards">
+                    <small>COMPLETED</small>
+                    <p>6M</p>
+                  </div>
+                  <div class="bottom-row-cards">
+                    <small>PENDING</small>
+                    <p>8M</p>
+                  </div>
+                  <div class="bottom-row-cards">
+                    <small>FAILED</small>
+                    <p>94M</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="transaction-card chart">
+              <div class="chart-header"><span class="chart-title">Transaction Volume</span></div>
+              <div class="transaction-card-body">
+                <div class="row">
+                  <div class="row-title">Payments</div>
+                  <div class="row-value">261</div>
+                </div>
+                <div class="row">
+                  <div class="row-title">Loans</div>
+                  <div class="row-value">461</div>
+                </div>
+                <div class="row">
+                  <div class="row-title">Savings</div>
+                  <div class="row-value">210</div>
+                </div>
+                <div class="row">
+                  <div class="row-title">Investments</div>
+                  <div class="row-value">491</div>
+                </div>
+                <div class="bottom-row">
+                  <div class="bottom-row-cards">
+                    <small>TOTAL VALUE</small>
+                    <p>763</p>
+                  </div>
+                  <div class="bottom-row-cards">
+                    <small>COMPLETED</small>
+                    <p>531</p>
+                  </div>
+                  <div class="bottom-row-cards">
+                    <small>PENDING</small>
+                    <p>13</p>
+                  </div>
+                  <div class="bottom-row-cards">
+                    <small>FAILED</small>
+                    <p>7</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-groups">
+          <div class="section-group">
+            <div class="section-group-header">
+              <h2>Users</h2>
+              <select name="" id="">
+                <option value="">Value</option>
+              </select>
+            </div>
+            <div class="section-group-body">
+              <ul>
+                <li>
+                  <span class="number">1</span>
+                  <div class="icon">EP</div>
+                  <div class="body-item"><span class="name">Ella Pope</span><span class="detail">95456789</span></div>
+                </li>
+                <li>
+                  <span class="number">2</span>
+                  <div class="icon">TY</div>
+                  <div class="body-item"><span class="name">Ella Pope</span><span class="detail">95456789</span></div>
+                </li>
+                <li>
+                  <span class="number">3</span>
+                  <div class="icon">IR</div>
+                  <div class="body-item"><span class="name">Ella Pope</span><span class="detail">95456789</span></div>
+                </li>
+                <li>
+                  <span class="number">4</span>
+                  <div class="icon">AH</div>
+                  <div class="body-item"><span class="name">Ella Pope</span><span class="detail">95456789</span></div>
+                </li>
+                <li>
+                  <span class="number">5</span>
+                  <div class="icon">ES</div>
+                  <div class="body-item"><span class="name">Ella Pope</span><span class="detail">95456789</span></div>
+                </li>
+                <li>
+                  <span class="number">6</span>
+                  <div class="icon">KB</div>
+                  <div class="body-item"><span class="name">Ella Pope</span><span class="detail">95456789</span></div>
+                </li>
+                <li>
+                  <span class="number">7</span>
+                  <div class="icon">FE</div>
+                  <div class="body-item"><span class="name">Ella Pope</span><span class="detail">95456789</span></div>
+                </li>
+                <li>
+                  <span class="number">8</span>
+                  <div class="icon">FE</div>
+                  <div class="body-item"><span class="name">Ella Pope</span><span class="detail">95456789</span></div>
+                </li>
+                <li>
+                  <span class="number">9</span>
+                  <div class="icon">FE</div>
+                  <div class="body-item"><span class="name">Ella Pope</span><span class="detail">95456789</span></div>
+                </li>
+                <li>
+                  <span class="number">10</span>
+                  <div class="icon">FE</div>
+                  <div class="body-item"><span class="name">Ella Pope</span><span class="detail">95456789</span></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="section-group">
+            <div class="section-group-header">
+              <h2>Services</h2>
+              <select name="" id="">
+                <option value="">Value</option>
+              </select>
+            </div>
+            <div class="section-group-body">
+              <ul>
+                <li>
+                  <span class="number">1</span>
+                  <div class="service-image"><img src="" alt="" /></div>
+                  <div class="body-item"><span class="name">Ella Pope</span></div>
+                </li>
+                <li>
+                  <span class="number">2</span>
+                  <div class="service-image"><img src="" alt="" /></div>
+                  <div class="body-item"><span class="name">Ella Pope</span></div>
+                </li>
+                <li>
+                  <span class="number">3</span>
+                  <div class="service-image"><img src="" alt="" /></div>
+                  <div class="body-item"><span class="name">Ella Pope</span></div>
+                </li>
+                <li>
+                  <span class="number">4</span>
+                  <div class="service-image"><img src="" alt="" /></div>
+                  <div class="body-item"><span class="name">Ella Pope</span></div>
+                </li>
+                <li>
+                  <span class="number">5</span>
+                  <div class="service-image"><img src="" alt="" /></div>
+                  <div class="body-item"><span class="name">Ella Pope</span></div>
+                </li>
+                <li>
+                  <span class="number">6</span>
+                  <div class="service-image"><img src="" alt="" /></div>
+                  <div class="body-item"><span class="name">Ella Pope</span></div>
+                </li>
+                <li>
+                  <span class="number">7</span>
+                  <div class="service-image"><img src="" alt="" /></div>
+                  <div class="body-item"><span class="name">Ella Pope</span></div>
+                </li>
+                <li>
+                  <span class="number">8</span>
+                  <div class="service-image"><img src="" alt="" /></div>
+                  <div class="body-item"><span class="name">Ella Pope</span></div>
+                </li>
+                <li>
+                  <span class="number">9</span>
+                  <div class="service-image"><img src="" alt="" /></div>
+                  <div class="body-item"><span class="name">Ella Pope</span></div>
+                </li>
+                <li>
+                  <span class="number">10</span>
+                  <div class="service-image"><img src="" alt="" /></div>
+                  <div class="body-item"><span class="name">Ella Pope</span></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="section-group">
+            <div class="section-group-header">
+              <h2>Locations</h2>
+              <select name="" id="">
+                <option value="">Value</option>
+              </select>
+            </div>
+            <div class="section-group-body">
+              <ul>
+                <li>
+                  <span class="number">1</span>
+                  <div class="icon"><i class="fas fa-map-pin"></i></div>
+                  <div class="body-item"><span class="name">Ella Pope</span><span class="detail">95456789</span></div>
+                </li>
+                <li>
+                  <span class="number">2</span>
+                  <div class="icon"><i class="fas fa-map-pin"></i></div>
+                  <div class="body-item"><span class="name">Ella Pope</span><span class="detail">95456789</span></div>
+                </li>
+                <li>
+                  <span class="number">3</span>
+                  <div class="icon"><i class="fas fa-map-pin"></i></div>
+                  <div class="body-item"><span class="name">Ella Pope</span><span class="detail">95456789</span></div>
+                </li>
+                <li>
+                  <span class="number">4</span>
+                  <div class="icon"><i class="fas fa-map-pin"></i></div>
+                  <div class="body-item"><span class="name">Ella Pope</span><span class="detail">95456789</span></div>
+                </li>
+                <li>
+                  <span class="number">5</span>
+                  <div class="icon"><i class="fas fa-map-pin"></i></div>
+                  <div class="body-item"><span class="name">Ella Pope</span><span class="detail">95456789</span></div>
+                </li>
+                <li>
+                  <span class="number">6</span>
+                  <div class="icon"><i class="fas fa-map-pin"></i></div>
+                  <div class="body-item"><span class="name">Ella Pope</span><span class="detail">95456789</span></div>
+                </li>
+                <li>
+                  <span class="number">7</span>
+                  <div class="icon"><i class="fas fa-map-pin"></i></div>
+                  <div class="body-item"><span class="name">Ella Pope</span><span class="detail">95456789</span></div>
+                </li>
+                <li>
+                  <span class="number">8</span>
+                  <div class="icon"><i class="fas fa-map-pin"></i></div>
+                  <div class="body-item"><span class="name">Ella Pope</span><span class="detail">95456789</span></div>
+                </li>
+                <li>
+                  <span class="number">9</span>
+                  <div class="icon"><i class="fas fa-map-pin"></i></div>
+                  <div class="body-item"><span class="name">Ella Pope</span><span class="detail">95456789</span></div>
+                </li>
+                <li>
+                  <span class="number">10</span>
+                  <div class="icon"><i class="fas fa-map-pin"></i></div>
+                  <div class="body-item"><span class="name">Ella Pope</span><span class="detail">95456789</span></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="./js/app.js"></script>
+    <!-- <script src="./js/vue.js"></script> -->
+  </body>
+</html>

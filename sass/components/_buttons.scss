@@ -1,0 +1,22 @@
+.btn {
+  cursor: pointer;
+}
+.export-btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 3.2rem;
+  padding: 0 1.5rem;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.03);
+
+  span {
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 2rem;
+  }
+  i {
+    font-size: 16px;
+    opacity: 0.3;
+  }
+}
