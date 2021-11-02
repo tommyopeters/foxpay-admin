@@ -12,7 +12,7 @@ body {
   box-sizing: border-box;
   font-size: 1.4rem;
   color: #191919;
-  font-family: "Baloo Bhai 2", cursive; }
+  font-family: "Montserrat", sans-serif; }
 
 .image-control {
   display: flex;
@@ -51,10 +51,10 @@ table {
     padding: 1.4rem 0; }
 
 .green-text {
-  color: #2fdf84; }
+  color: #3c9937; }
 
 .red-text {
-  color: #ff2929; }
+  color: #cf0000; }
 
 .yellow-text {
   color: #e3bc6a; }
@@ -265,11 +265,11 @@ table {
     .slipcard-modals .modal-content .modal-body .search input {
       border: none;
       outline: none;
-      font-family: "Baloo Bhai 2";
+      font-family: "Montserrat";
       font-size: 16px;
       font-weight: 600; }
       .slipcard-modals .modal-content .modal-body .search input::placeholder {
-        font-family: "Baloo Bhai 2";
+        font-family: "Montserrat";
         font-size: 16px;
         font-weight: 600; }
   .slipcard-modals .modal-content .modal-body .date-filters {
@@ -385,10 +385,10 @@ table {
         border: none;
         outline: none;
         background-color: transparent;
-        font-family: "Baloo Bhai 2";
+        font-family: "Montserrat";
         font-size: 14px; }
         .slipcard-modals .modal-content .modal-body .limit-group .input-group input::placeholder {
-          font-family: "Baloo Bhai 2";
+          font-family: "Montserrat";
           font-size: 14px; }
     .slipcard-modals .modal-content .modal-body .limit-group .set-limit {
       height: 5rem;
@@ -653,109 +653,27 @@ table {
 .select-hide {
   display: none; }
 
-body.login {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #131415; }
-  body.login .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 108rem;
-    height: 86rem;
-    border-radius: 2rem;
-    background-color: white;
-    overflow: hidden; }
-    body.login .wrapper .column {
-      padding: 9rem 11rem; }
-      body.login .wrapper .column.empty {
-        background-image: url(../../images/pexels-gdtography-911738.jpg);
-        background-size: cover;
-        background-position-x: 50%; }
-      body.login .wrapper .column .intro {
-        margin-bottom: 6rem; }
-        body.login .wrapper .column .intro span {
-          color: #252427;
-          font-size: 16px;
-          font-weight: 500;
-          margin-bottom: 8px; }
-        body.login .wrapper .column .intro h2 {
-          font-size: 50px;
-          font-weight: bold;
-          letter-spacing: 0;
-          line-height: 50px; }
-      body.login .wrapper .column .padlock-image {
-        margin: 0 auto 7rem;
-        height: 15rem;
-        display: flex;
-        align-items: center;
-        justify-content: center; }
-        body.login .wrapper .column .padlock-image img {
-          height: 100%; }
-      body.login .wrapper .column form .input-group {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        margin-bottom: 2.5rem; }
-        body.login .wrapper .column form .input-group input {
-          width: 100%;
-          border: none;
-          outline: none;
-          padding: 8px 1.5rem 8px 2rem;
-          background-color: rgba(25, 25, 25, 0.03);
-          color: #191919;
-          font-family: "Baloo Bhai 2";
-          font-size: 14px;
-          line-height: 2.2rem; }
-        body.login .wrapper .column form .input-group .icon {
-          margin-left: 2rem; }
-      body.login .wrapper .column form button {
-        border: none;
-        outline: none;
-        margin-bottom: 3.5rem;
-        display: block;
-        height: 5rem;
-        width: 100%;
-        color: #ffffff;
-        font-family: "Baloo Bhai 2";
-        font-size: 16px;
-        font-weight: bold;
-        border-radius: 4px;
-        background-color: #191919; }
-      body.login .wrapper .column form a.forgot-password {
-        display: flex;
-        justify-content: center;
-        text-decoration: none;
-        color: #191919;
-        font-family: "Baloo Bhai 2";
-        font-size: 16px;
-        font-weight: 600;
-        width: 100%; }
-
 body.main {
   position: relative; }
   body.main aside {
     position: fixed;
     height: 100vh;
     width: 20rem;
-    background-color: #000000;
+    background-color: #244473;
     color: #ffffff;
-    padding: 2.5rem; }
-    body.main aside .logo {
-      margin: 5px 0 3rem;
-      width: 11.8rem; }
+    padding: 2rem; }
     body.main aside ul.nav li {
-      padding: 1rem 0;
+      padding: 7px 1rem;
       cursor: pointer;
       display: flex;
       align-items: center;
       margin-bottom: 0.5rem;
+      border-radius: 4px;
       transition: all 150ms ease-in-out; }
       body.main aside ul.nav li:hover:not(.active) {
-        color: #e4cea3; }
+        background-color: #ff6600; }
       body.main aside ul.nav li.active {
-        color: #e3bc6a; }
+        background-color: #ff6600; }
         body.main aside ul.nav li.active span {
           font-weight: 600; }
       body.main aside ul.nav li i {
@@ -794,7 +712,7 @@ body.main {
           border: 1.6px solid #000000; }
     body.main .wrapper main {
       padding: 2rem;
-      background-color: #f6f6f6; }
+      background-color: white; }
       body.main .wrapper main section {
         margin-bottom: 2rem; }
         body.main .wrapper main section .section-header {
@@ -875,8 +793,26 @@ body.main {
                 border-radius: 1rem;
                 padding: 0 1.5rem;
                 height: 2rem;
-                background-color: black;
                 color: white; }
+              body.main .wrapper main section.transactions .section-body .transaction-card-body .row:first-of-type .row-value {
+                background-color: #244473; }
+              body.main .wrapper main section.transactions .section-body .transaction-card-body .row:nth-of-type(2) .row-value {
+                color: #000;
+                background-color: #b6ffe6; }
+              body.main .wrapper main section.transactions .section-body .transaction-card-body .row:nth-of-type(3) .row-value {
+                color: #000;
+                background-color: #cddbfb; }
+              body.main .wrapper main section.transactions .section-body .transaction-card-body .row:nth-of-type(4) .row-value {
+                color: #000;
+                background-color: #fbd5cd; }
+              body.main .wrapper main section.transactions .section-body .transaction-card-body .row:nth-of-type(5) .row-value {
+                color: #000;
+                background-color: #d3fbcd; }
+              body.main .wrapper main section.transactions .section-body .transaction-card-body .row:nth-of-type(6) .row-value {
+                color: #000;
+                background-color: #fbcdf2; }
+              body.main .wrapper main section.transactions .section-body .transaction-card-body .row:nth-of-type(7) .row-value {
+                background-color: #cdfbeb; }
             body.main .wrapper main section.transactions .section-body .transaction-card-body .bottom-row {
               margin: 2rem 0 8px;
               display: flex; }
@@ -920,13 +856,31 @@ body.main {
                 display: flex;
                 align-items: center;
                 margin-bottom: 1.2rem; }
+                body.main .wrapper main section.section-groups .section-group-body ul li:nth-of-type(6n + 1) .icon {
+                  color: #244473;
+                  background-color: #cddbfb; }
+                body.main .wrapper main section.section-groups .section-group-body ul li:nth-of-type(6n + 2) .icon {
+                  color: #244473;
+                  background-color: #b6ffe6; }
+                body.main .wrapper main section.section-groups .section-group-body ul li:nth-of-type(6n + 3) .icon {
+                  color: #244473;
+                  background-color: #fbcdf2; }
+                body.main .wrapper main section.section-groups .section-group-body ul li:nth-of-type(6n + 4) .icon {
+                  color: #244473;
+                  background-color: #d3fbcd; }
+                body.main .wrapper main section.section-groups .section-group-body ul li:nth-of-type(6n + 5) .icon {
+                  color: #244473;
+                  background-color: #fbd5cd; }
+                body.main .wrapper main section.section-groups .section-group-body ul li:nth-of-type(6n) .icon {
+                  color: #244473;
+                  background-color: #cdfbeb; }
                 body.main .wrapper main section.section-groups .section-group-body ul li .number {
                   font-size: 14px;
                   font-weight: bold;
                   margin-right: 1.5rem; }
                 body.main .wrapper main section.section-groups .section-group-body ul li .icon {
                   font-size: 16px;
-                  font-weight: 500;
+                  font-weight: 600;
                   height: 48px;
                   width: 48px;
                   border-radius: 50%;
@@ -1256,6 +1210,8 @@ body.main {
           align-items: center;
           justify-content: space-between;
           margin-bottom: 1.6rem; }
+          body.main .wrapper main.transactions .table-filters h2 {
+            color: #244473; }
           body.main .wrapper main.transactions .table-filters .search {
             display: flex;
             align-items: center;
@@ -1273,53 +1229,53 @@ body.main {
               outline: none;
               line-height: 1.6rem;
               font-size: 16px;
-              font-family: "Baloo Bhai 2";
+              font-family: "Montserrat";
               font-weight: 600;
               flex-grow: 1; }
               body.main .wrapper main.transactions .table-filters .search input::placeholder {
-                font-family: "Baloo Bhai 2";
+                font-family: "Montserrat";
                 font-size: 16px;
                 font-weight: 600; }
           body.main .wrapper main.transactions .table-filters-group {
             display: flex;
             align-items: center; }
             body.main .wrapper main.transactions .table-filters-group .export-btn {
-              margin-right: 1rem;
-              height: 4rem;
-              border-radius: 4px;
-              padding: 0 2rem 0 3rem;
-              background-color: white;
-              border: 2px solid #191919; }
+              margin-right: 2rem;
+              height: 3.6rem;
+              border-radius: 8px;
+              background-color: rgba(36, 68, 115, 0.03);
+              color: #244473; }
               body.main .wrapper main.transactions .table-filters-group .export-btn i {
-                margin-left: 1rem;
-                opacity: 1; }
+                margin-left: 2rem;
+                opacity: 0.3; }
             body.main .wrapper main.transactions .table-filters-group .date-filter {
               cursor: pointer;
               display: flex;
               align-items: center;
               justify-content: center;
-              font-size: 1.4rem;
-              font-weight: bold;
+              color: #4e4e4e;
+              font-size: 12px;
+              font-weight: 500;
               padding: 0 4rem;
-              margin-right: 1rem;
-              height: 4rem;
-              border-radius: 4px;
-              border: 2px solid #191919; }
+              height: 36px;
+              border: 1px solid rgba(36, 68, 115, 0.3);
+              border-radius: 3px; }
             body.main .wrapper main.transactions .table-filters-group .filters {
+              margin-right: 1.5rem;
+              height: 36px;
               width: 10rem;
               display: flex;
               align-items: center;
               justify-content: space-between;
-              background-color: black;
-              height: 4rem;
-              border-radius: 4px;
+              border: 1px solid rgba(36, 68, 115, 0.3);
+              border-radius: 3px;
+              background-color: #ffffff;
               padding: 0 1.5rem 0 2rem; }
               body.main .wrapper main.transactions .table-filters-group .filters span {
-                font-size: 1.4rem;
-                font-weight: bold;
-                color: white; }
+                font-size: 12px;
+                font-weight: 500; }
               body.main .wrapper main.transactions .table-filters-group .filters i {
-                color: white; }
+                color: #4e4e4e; }
         body.main .wrapper main.transactions table tr td:first-of-type,
         body.main .wrapper main.transactions table tr th:first-of-type {
           padding-left: 2rem;
@@ -1328,16 +1284,21 @@ body.main {
         body.main .wrapper main.transactions table tr td:last-of-type,
         body.main .wrapper main.transactions table tr th:last-of-type {
           padding-right: 2 rem; }
-        body.main .wrapper main.transactions table thead tr th {
-          font-size: 14px;
-          font-weight: 600;
-          text-align: start;
-          padding: 1.3rem 0;
-          background-color: rgba(0, 0, 0, 0.03); }
+        body.main .wrapper main.transactions table thead {
+          overflow: hidden; }
+          body.main .wrapper main.transactions table thead tr th {
+            font-size: 14px;
+            font-weight: 600;
+            text-align: start;
+            padding: 1.3rem 0;
+            background-color: rgba(0, 0, 0, 0.03); }
         body.main .wrapper main.transactions table tbody tr td {
           font-size: 14px;
           font-weight: 500;
           padding: 1.4rem 0; }
+          body.main .wrapper main.transactions table tbody tr td a {
+            text-decoration: none;
+            color: #244473; }
       body.main .wrapper main.savings {
         min-height: calc(100vh - 7rem);
         padding: 1.5rem; }
@@ -1362,7 +1323,7 @@ body.main {
             body.main .wrapper main.savings .inner-wrapper .search input {
               border: none;
               outline: none;
-              font-family: "Baloo Bhai 2";
+              font-family: "Montserrat";
               font-size: 14px;
               font-weight: 500;
               width: 100%; }
@@ -1493,10 +1454,10 @@ body.main {
                   outline: none;
                   background-color: transparent;
                   font-size: 16px;
-                  font-family: "Baloo Bhai 2"; }
+                  font-family: "Montserrat"; }
                   body.main .wrapper main.savings .inner-wrapper .plan-details-body .setup-group-value input::placeholder {
                     font-size: 16px;
-                    font-family: "Baloo Bhai 2"; }
+                    font-family: "Montserrat"; }
             body.main .wrapper main.savings .inner-wrapper .plan-details-body .setup .update-btn {
               margin-top: 4rem;
               height: 5rem;
@@ -1548,11 +1509,11 @@ body.main {
           body.main .wrapper main.services .inner-wrapper .service-list .search input {
             border: none;
             outline: none;
-            font-family: "Baloo Bhai 2";
+            font-family: "Montserrat";
             font-size: 16px;
             font-weight: 600; }
             body.main .wrapper main.services .inner-wrapper .service-list .search input::placeholder {
-              font-family: "Baloo Bhai 2";
+              font-family: "Montserrat";
               font-size: 16px;
               font-weight: 600; }
           body.main .wrapper main.services .inner-wrapper .service-list .search i {
@@ -1568,7 +1529,8 @@ body.main {
             justify-content: space-between;
             padding: 1rem 2rem;
             font-size: 14px;
-            font-weight: 600;
+            font-weight: 500;
+            color: #244473;
             transition: all 150ms ease-in-out; }
             body.main .wrapper main.services .inner-wrapper .service-list ul li i {
               display: none;
@@ -2138,11 +2100,11 @@ body.main {
               body.main .wrapper main .panel-body .panel-filters .search input {
                 border: none;
                 outline: none;
-                font-family: "Baloo Bhai 2";
+                font-family: "Montserrat";
                 font-size: 16px;
                 font-weight: 600; }
                 body.main .wrapper main .panel-body .panel-filters .search input::placeholder {
-                  font-family: "Baloo Bhai 2";
+                  font-family: "Montserrat";
                   font-size: 16px;
                   font-weight: 600; }
             body.main .wrapper main .panel-body .panel-filters-group {
