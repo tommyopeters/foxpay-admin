@@ -32,7 +32,7 @@ table {
   width: 100%; }
   table tr td,
   table tr th {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+    border-bottom: 1px solid rgba(36, 68, 115, 0.3); }
     table tr td:first-of-type,
     table tr th:first-of-type {
       padding-left: 2.5rem; }
@@ -40,15 +40,25 @@ table {
     table tr th:last-of-type {
       padding-right: 2.5rem; }
   table thead tr th {
+    color: #244473;
     font-size: 14px;
     font-weight: 600;
     text-align: start;
     padding: 1.3rem 0;
-    background-color: rgba(0, 0, 0, 0.03); }
+    background-color: rgba(36, 68, 115, 0.03); }
   table tbody tr td {
     font-size: 14px;
     font-weight: 500;
-    padding: 1.4rem 0; }
+    padding: 1.4rem 0;
+    color: #4e4e4e; }
+
+.table-container {
+  border: 1px solid rgba(36, 68, 115, 0.3);
+  border-radius: 4px;
+  overflow: hidden; }
+  .table-container table a {
+    text-decoration: none;
+    color: #244473; }
 
 .green-text {
   color: #3c9937; }
@@ -65,11 +75,12 @@ table {
 .export-btn {
   cursor: pointer;
   display: flex;
+  height: 3.6rem;
   align-items: center;
-  height: 3.2rem;
   padding: 0 1.5rem;
   border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.03); }
+  background-color: rgba(36, 68, 115, 0.03);
+  color: #244473; }
   .export-btn span {
     font-size: 14px;
     font-weight: 600;
@@ -89,7 +100,7 @@ table {
       margin-right: 1.5rem;
       height: 14px;
       width: 14px;
-      border: 1px solid #000000;
+      border: 1px solid #244473;
       border-radius: 3px;
       background-color: #ffffff;
       transition: all 150ms ease-in-out; }
@@ -102,9 +113,9 @@ table {
       transform: translate(-50%, -50%);
       color: white; }
     .checkbox-group input[type="checkbox"] + label:hover .checkbox-mark {
-      background-color: #0000003a; }
+      background-color: #2444733a; }
   .checkbox-group input[type="checkbox"]:checked + label .checkbox-mark {
-    background-color: #000000; }
+    background-color: #244473; }
   .checkbox-group input[type="checkbox"]:checked + label .checkbox-mark:after {
     content: "\2714"; }
 
@@ -169,7 +180,7 @@ table {
   .checkbox-switch:checked + label {
     color: #004ba6; }
     .checkbox-switch:checked + label span {
-      background-color: #000000; }
+      background-color: #244473; }
       .checkbox-switch:checked + label span:before {
         transform: translateX(8px); }
 
@@ -694,24 +705,37 @@ body.main {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background-color: white; }
+      background-color: white;
+      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.09); }
       body.main .wrapper header h2 {
         font-size: 22px;
         font-weight: bold; }
       body.main .wrapper header .user {
         display: flex;
-        align-items: center; }
-        body.main .wrapper header .user-intro {
-          font-size: 14px;
-          font-weight: 600; }
+        align-items: center;
+        cursor: pointer; }
         body.main .wrapper header .user-image {
-          height: 40px;
-          width: 40px;
+          height: 3.2rem;
+          width: 3.2rem;
           margin: 0 1rem;
           border-radius: 50%;
-          border: 1.6px solid #000000; }
+          overflow: hidden; }
+        body.main .wrapper header .user-details .name {
+          color: #4a4a4a;
+          font-size: 12px;
+          font-weight: 600;
+          margin-bottom: 5px; }
+        body.main .wrapper header .user-details .role {
+          color: #244473;
+          font-size: 12px;
+          font-weight: 600; }
+        body.main .wrapper header .user i {
+          color: #4e4e4e;
+          font-size: 12px;
+          margin-left: 1rem; }
     body.main .wrapper main {
-      padding: 2rem;
+      margin-top: 2rem;
+      padding: 0 2rem 2rem;
       background-color: white; }
       body.main .wrapper main section {
         margin-bottom: 2rem; }
@@ -914,207 +938,209 @@ body.main {
           display: flex;
           flex-direction: column; }
       body.main .wrapper main.users {
-        min-height: calc(100vh - 7rem);
-        display: grid;
-        grid-template-columns: 20rem 1fr;
-        column-gap: 1.6rem; }
-        body.main .wrapper main.users .user-list {
-          background-color: white; }
-          body.main .wrapper main.users .user-list .filter {
-            background-color: white;
-            padding: 0 2.3rem;
-            height: 4.5rem;
+        min-height: calc(100vh - 7rem); }
+        body.main .wrapper main.users .users-nav {
+          margin: 2.5rem 0 3.5rem;
+          border-bottom: 0.5px solid rgba(36, 68, 115, 0.1);
+          width: 100%; }
+          body.main .wrapper main.users .users-nav ul {
             display: flex;
             align-items: center; }
-            body.main .wrapper main.users .user-list .filter i {
-              margin-right: 6px;
-              font-size: 16px;
-              color: rgba(0, 0, 0, 0.3); }
-            body.main .wrapper main.users .user-list .filter input {
-              width: 100%;
-              outline: none;
-              border: none; }
-              body.main .wrapper main.users .user-list .filter input::placeholder {
-                font-weight: 500;
-                font-size: 14px; }
-          body.main .wrapper main.users .user-list ul {
-            background-color: white;
-            border-right: 1px solid rgba(36, 68, 115, 0.3); }
-            body.main .wrapper main.users .user-list ul li {
+            body.main .wrapper main.users .users-nav ul li {
               cursor: pointer;
-              font-size: 14px;
-              font-weight: bold;
-              padding: 1.5rem;
-              height: 4rem;
-              display: flex;
-              align-items: center;
-              border-bottom: 1px solid rgba(36, 68, 115, 0.3); }
-              body.main .wrapper main.users .user-list ul li:not(.active):hover {
-                background-color: rgba(0, 0, 0, 0.1); }
-              body.main .wrapper main.users .user-list ul li.active {
-                background-color: #000;
-                color: white; }
-        body.main .wrapper main.users .user-details {
-          padding: 3rem 2.5rem;
-          background-color: white; }
-          body.main .wrapper main.users .user-details-header {
-            display: flex;
-            align-items: center; }
-            body.main .wrapper main.users .user-details-header .initials {
-              font-size: 24px;
-              font-weight: 600;
-              height: 6rem;
-              width: 6rem;
+              height: 3.6rem;
+              width: 10.6rem;
               display: flex;
               align-items: center;
               justify-content: center;
-              margin-right: 1.6rem;
-              background-color: black;
-              color: white;
-              border-radius: 50%; }
-            body.main .wrapper main.users .user-details-header h2 {
-              font-size: 24px;
-              font-weight: bold; }
-          body.main .wrapper main.users .user-details-nav {
-            margin: 2.5rem 0 3.5rem;
-            border-bottom: 0.5px solid rgba(36, 68, 115, 0.1);
-            width: 100%; }
-            body.main .wrapper main.users .user-details-nav ul {
-              display: flex;
-              align-items: center; }
-              body.main .wrapper main.users .user-details-nav ul li {
-                cursor: pointer;
-                height: 3.6rem;
-                width: 10.6rem;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 2px 16px 0 2px;
-                color: #000;
-                font-size: 14px;
-                font-weight: 500;
-                font-size: 14px;
-                font-weight: 600;
-                background-color: rgba(36, 68, 115, 0.03); }
-                body.main .wrapper main.users .user-details-nav ul li:not(.active):hover {
-                  background-color: rgba(36, 68, 115, 0.23); }
-                body.main .wrapper main.users .user-details-nav ul li.active {
-                  color: white;
-                  background-color: black;
-                  font-weight: 600; }
-                body.main .wrapper main.users .user-details-nav ul li:nth-child(1) {
-                  width: 8.8rem; }
-                body.main .wrapper main.users .user-details-nav ul li:nth-child(2) {
-                  width: 12.8rem; }
-                body.main .wrapper main.users .user-details-nav ul li:nth-child(3) {
-                  width: 9.2rem; }
-          body.main .wrapper main.users .user-details-body .column {
-            width: max-content; }
-            body.main .wrapper main.users .user-details-body .column-header {
-              font-size: 18px;
-              font-weight: bold;
-              margin-bottom: 2rem; }
-            body.main .wrapper main.users .user-details-body .column .row:not(:first-of-type) {
-              margin-top: 2.5rem; }
-            body.main .wrapper main.users .user-details-body .column .row:not(:last-of-type) {
-              border-bottom: 1px solid #979797; }
-          body.main .wrapper main.users .user-details-body .form-group {
-            margin-bottom: 2rem; }
-            body.main .wrapper main.users .user-details-body .form-group small {
-              font-size: 12px;
-              font-weight: 500;
-              opacity: 0.5;
-              color: #0f0f0f;
-              margin-bottom: 6px; }
-            body.main .wrapper main.users .user-details-body .form-group p {
-              color: #0f0f0f;
+              border-radius: 2px 16px 0 2px;
+              color: rgba(36, 68, 115, 0.4);
               font-size: 14px;
-              font-weight: 500; }
-            body.main .wrapper main.users .user-details-body .form-group.slider {
-              display: flex;
-              align-items: center; }
-              body.main .wrapper main.users .user-details-body .form-group.slider small {
-                margin-bottom: 0;
-                font-size: 14px;
-                font-weight: 500;
-                margin-right: 1rem; }
-          body.main .wrapper main.users .user-details-body .table-options {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            margin-bottom: 1.5rem; }
-            body.main .wrapper main.users .user-details-body .table-options .export-btn {
-              margin-right: 2.5rem;
-              height: 3.6rem; }
-              body.main .wrapper main.users .user-details-body .table-options .export-btn span {
-                margin-right: 5rem; }
-            body.main .wrapper main.users .user-details-body .table-options .filter,
-            body.main .wrapper main.users .user-details-body .table-options .date-filter {
-              margin-right: 1.5rem;
-              display: flex;
-              align-items: center;
-              height: 3.6rem;
-              font-size: 12px;
               font-weight: 500;
-              padding: 0 1.2rem 0 2rem;
-              color: #4e4e4e;
-              border: 1px solid rgba(36, 68, 115, 0.3);
-              border-radius: 3px;
-              background-color: #ffffff; }
-              body.main .wrapper main.users .user-details-body .table-options .filter span,
-              body.main .wrapper main.users .user-details-body .table-options .date-filter span {
-                margin-right: 1rem; }
-              body.main .wrapper main.users .user-details-body .table-options .filter i,
-              body.main .wrapper main.users .user-details-body .table-options .date-filter i {
-                font-size: 1.8rem; }
-          body.main .wrapper main.users .user-details-body table {
-            border-collapse: collapse; }
-            body.main .wrapper main.users .user-details-body table tr td,
-            body.main .wrapper main.users .user-details-body table tr th {
-              border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
-              body.main .wrapper main.users .user-details-body table tr td:first-of-type,
-              body.main .wrapper main.users .user-details-body table tr th:first-of-type {
-                padding-left: 2.5rem; }
-              body.main .wrapper main.users .user-details-body table tr td:last-of-type,
-              body.main .wrapper main.users .user-details-body table tr th:last-of-type {
-                padding-right: 2.5rem; }
-            body.main .wrapper main.users .user-details-body table thead tr th {
               font-size: 14px;
               font-weight: 600;
-              text-align: start;
-              padding: 1.3rem 0;
-              background-color: rgba(0, 0, 0, 0.03); }
-            body.main .wrapper main.users .user-details-body table tbody tr td {
-              font-size: 14px;
-              font-weight: 500;
-              padding: 1.5rem 0; }
-          body.main .wrapper main.users .user-details-body .slipcard {
-            margin-top: 6rem;
-            display: grid;
-            grid-template-columns: 33rem 1fr;
-            column-gap: 4rem;
-            row-gap: 3rem; }
-            body.main .wrapper main.users .user-details-body .slipcard-title {
+              background-color: rgba(36, 68, 115, 0.03); }
+              body.main .wrapper main.users .users-nav ul li:not(.active):hover {
+                background-color: rgba(36, 68, 115, 0.23); }
+              body.main .wrapper main.users .users-nav ul li.active {
+                color: white;
+                background-color: #244473;
+                font-weight: 600; }
+              body.main .wrapper main.users .users-nav ul li:nth-child(1) {
+                width: 8.8rem; }
+              body.main .wrapper main.users .users-nav ul li:nth-child(2) {
+                width: 12.8rem; }
+              body.main .wrapper main.users .users-nav ul li:nth-child(3) {
+                width: 9.2rem; }
+        body.main .wrapper main.users .container {
+          display: grid;
+          grid-template-columns: 20rem 1fr;
+          column-gap: 1.6rem;
+          border: 1px solid rgba(36, 68, 115, 0.3);
+          border-radius: 4px; }
+          body.main .wrapper main.users .container .users-header {
+            padding: 0 2.5rem;
+            height: 5rem;
+            grid-column: 1 / span 2;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(36, 68, 115, 0.3); }
+            body.main .wrapper main.users .container .users-header .search {
+              height: 100%;
               display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: center; }
-              body.main .wrapper main.users .user-details-body .slipcard-title small {
+              align-items: center; }
+              body.main .wrapper main.users .container .users-header .search i {
+                margin-right: 1rem;
+                opacity: 0.3;
+                color: #244473; }
+              body.main .wrapper main.users .container .users-header .search input {
+                border: none;
+                outline: none; }
+          body.main .wrapper main.users .container .user-list {
+            background-color: white; }
+            body.main .wrapper main.users .container .user-list ul {
+              background-color: white;
+              border-right: 1px solid rgba(36, 68, 115, 0.3); }
+              body.main .wrapper main.users .container .user-list ul li {
+                cursor: pointer;
+                font-size: 14px;
+                font-weight: bold;
+                padding: 1.5rem;
+                height: 4rem;
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid rgba(36, 68, 115, 0.3);
+                color: #244473; }
+                body.main .wrapper main.users .container .user-list ul li:not(.active):hover {
+                  background-color: rgba(0, 0, 0, 0.1); }
+                body.main .wrapper main.users .container .user-list ul li.active {
+                  background-color: #244473;
+                  color: white; }
+          body.main .wrapper main.users .container .user-details {
+            padding: 3rem 2.5rem;
+            background-color: white; }
+            body.main .wrapper main.users .container .user-details-header {
+              display: flex;
+              align-items: center; }
+              body.main .wrapper main.users .container .user-details-header h2 {
+                font-size: 24px;
+                font-weight: bold;
+                color: #244473; }
+            body.main .wrapper main.users .container .user-details-nav {
+              margin: 2.5rem 0 3.5rem;
+              border-bottom: 0.5px solid rgba(36, 68, 115, 0.1);
+              width: 100%; }
+              body.main .wrapper main.users .container .user-details-nav ul {
+                display: flex;
+                align-items: center; }
+                body.main .wrapper main.users .container .user-details-nav ul li {
+                  cursor: pointer;
+                  height: 3.6rem;
+                  width: 10.6rem;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border-radius: 2px 16px 0 2px;
+                  color: #244473;
+                  font-size: 14px;
+                  font-weight: 500;
+                  font-size: 14px;
+                  font-weight: 600;
+                  background-color: rgba(36, 68, 115, 0.03); }
+                  body.main .wrapper main.users .container .user-details-nav ul li:not(.active):hover {
+                    background-color: rgba(36, 68, 115, 0.23); }
+                  body.main .wrapper main.users .container .user-details-nav ul li.active {
+                    color: white;
+                    background-color: #244473;
+                    font-weight: 600; }
+                  body.main .wrapper main.users .container .user-details-nav ul li:nth-child(1) {
+                    width: 8.8rem; }
+                  body.main .wrapper main.users .container .user-details-nav ul li:nth-child(2) {
+                    width: 12.8rem; }
+                  body.main .wrapper main.users .container .user-details-nav ul li:nth-child(3) {
+                    width: 9.2rem; }
+            body.main .wrapper main.users .container .user-details-body .column {
+              width: max-content; }
+              body.main .wrapper main.users .container .user-details-body .column-header {
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 2rem; }
+              body.main .wrapper main.users .container .user-details-body .column .row:not(:first-of-type) {
+                margin-top: 2.5rem; }
+              body.main .wrapper main.users .container .user-details-body .column .row:not(:last-of-type) {
+                border-bottom: 1px solid #979797; }
+            body.main .wrapper main.users .container .user-details-body .form-group {
+              margin-bottom: 2rem; }
+              body.main .wrapper main.users .container .user-details-body .form-group small {
+                font-size: 12px;
+                font-weight: 500;
                 opacity: 0.5;
-                color: #252427;
+                color: #0f0f0f;
+                margin-bottom: 6px; }
+              body.main .wrapper main.users .container .user-details-body .form-group p {
+                color: #0f0f0f;
                 font-size: 14px;
                 font-weight: 500; }
-              body.main .wrapper main.users .user-details-body .slipcard-title p.amount {
-                font-size: 35px;
-                font-weight: bold; }
-            body.main .wrapper main.users .user-details-body .slipcard-card {
-              height: 20rem;
-              width: 33rem;
-              width: 330px;
-              border-radius: 14px;
-              background-color: black;
-              box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.32); }
-            body.main .wrapper main.users .user-details-body .slipcard-actions .btn {
+              body.main .wrapper main.users .container .user-details-body .form-group.slider {
+                display: flex;
+                align-items: center; }
+                body.main .wrapper main.users .container .user-details-body .form-group.slider small {
+                  margin-bottom: 0;
+                  font-size: 14px;
+                  font-weight: 500;
+                  margin-right: 1rem; }
+            body.main .wrapper main.users .container .user-details-body .table-options {
+              display: flex;
+              align-items: center;
+              justify-content: flex-end;
+              margin-bottom: 1.5rem; }
+              body.main .wrapper main.users .container .user-details-body .table-options .export-btn {
+                margin-right: 2.5rem;
+                height: 3.6rem; }
+                body.main .wrapper main.users .container .user-details-body .table-options .export-btn span {
+                  margin-right: 5rem; }
+              body.main .wrapper main.users .container .user-details-body .table-options .filter,
+              body.main .wrapper main.users .container .user-details-body .table-options .date-filter {
+                margin-right: 1.5rem;
+                display: flex;
+                align-items: center;
+                height: 3.6rem;
+                font-size: 12px;
+                font-weight: 500;
+                padding: 0 1.2rem 0 2rem;
+                color: #4e4e4e;
+                border: 1px solid rgba(36, 68, 115, 0.3);
+                border-radius: 3px;
+                background-color: #ffffff; }
+                body.main .wrapper main.users .container .user-details-body .table-options .filter span,
+                body.main .wrapper main.users .container .user-details-body .table-options .date-filter span {
+                  margin-right: 1rem; }
+                body.main .wrapper main.users .container .user-details-body .table-options .filter i,
+                body.main .wrapper main.users .container .user-details-body .table-options .date-filter i {
+                  font-size: 1.8rem; }
+            body.main .wrapper main.users .container .user-details-body table {
+              border-collapse: collapse; }
+              body.main .wrapper main.users .container .user-details-body table tr td,
+              body.main .wrapper main.users .container .user-details-body table tr th {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+                body.main .wrapper main.users .container .user-details-body table tr td:first-of-type,
+                body.main .wrapper main.users .container .user-details-body table tr th:first-of-type {
+                  padding-left: 2.5rem; }
+                body.main .wrapper main.users .container .user-details-body table tr td:last-of-type,
+                body.main .wrapper main.users .container .user-details-body table tr th:last-of-type {
+                  padding-right: 2.5rem; }
+              body.main .wrapper main.users .container .user-details-body table thead tr th {
+                font-size: 14px;
+                font-weight: 600;
+                text-align: start;
+                padding: 1.3rem 0;
+                background-color: rgba(0, 0, 0, 0.03); }
+              body.main .wrapper main.users .container .user-details-body table tbody tr td {
+                font-size: 14px;
+                font-weight: 500;
+                padding: 1.5rem 0; }
+            body.main .wrapper main.users .container .user-details-body .security-btn {
               margin-bottom: 3.3rem;
               display: flex;
               align-items: center;
@@ -1126,79 +1152,22 @@ body.main {
               border: 2px solid #191919;
               border-radius: 3.2px;
               background-color: rgba(255, 255, 255, 0); }
-            body.main .wrapper main.users .user-details-body .slipcard-actions .freeze {
+            body.main .wrapper main.users .container .user-details .initials {
+              font-size: 24px;
+              font-weight: 600;
+              height: 8rem;
+              width: 8rem;
               display: flex;
               align-items: center;
-              justify-content: space-between;
-              padding: 0 1rem 1rem;
-              width: 315px;
-              border-bottom: 1px solid rgba(25, 25, 25, 0.2); }
-              body.main .wrapper main.users .user-details-body .slipcard-actions .freeze i {
-                font-size: 1.4rem;
-                margin-right: 2.5rem; }
-              body.main .wrapper main.users .user-details-body .slipcard-actions .freeze > span {
-                flex-grow: 1;
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 1.6rem; }
-              body.main .wrapper main.users .user-details-body .slipcard-actions .freeze .status-select input[type="checkbox"] + label span {
-                height: 2.4rem;
-                width: 4.4rem;
-                background-color: #f7f5f5; }
-                body.main .wrapper main.users .user-details-body .slipcard-actions .freeze .status-select input[type="checkbox"] + label span::before {
-                  height: 2rem;
-                  width: 2rem;
-                  background-color: #d7d7d7; }
-              body.main .wrapper main.users .user-details-body .slipcard-actions .freeze .status-select input[type="checkbox"]:checked + label span {
-                background-color: #000000; }
-                body.main .wrapper main.users .user-details-body .slipcard-actions .freeze .status-select input[type="checkbox"]:checked + label span::before {
-                  transform: translateX(2rem);
-                  background-color: white; }
-          body.main .wrapper main.users .user-details-body .slipcard-details {
-            margin-top: 3.3rem; }
-            body.main .wrapper main.users .user-details-body .slipcard-details .detail-box {
-              width: 33rem;
-              border-bottom: 1px solid rgba(25, 25, 25, 0.1);
-              margin-bottom: 1.3rem; }
-              body.main .wrapper main.users .user-details-body .slipcard-details .detail-box small {
-                font-size: 12px;
-                font-weight: 500;
-                opacity: 0.5; }
-              body.main .wrapper main.users .user-details-body .slipcard-details .detail-box .detail {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                margin-bottom: 1rem; }
-                body.main .wrapper main.users .user-details-body .slipcard-details .detail-box .detail span {
-                  color: #252427;
-                  font-size: 16px; }
-                body.main .wrapper main.users .user-details-body .slipcard-details .detail-box .detail .copy-btn {
-                  cursor: pointer;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  font-size: 12px;
-                  font-weight: 500;
-                  height: 25px;
-                  width: 55px;
-                  border-radius: 4px;
-                  background-color: rgba(227, 188, 106, 0.6); }
-          body.main .wrapper main.users .user-details-body .security-btn {
-            margin-bottom: 3.3rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 14px;
-            font-weight: bold;
-            height: 40px;
-            width: 315px;
-            border: 2px solid #191919;
-            border-radius: 3.2px;
-            background-color: rgba(255, 255, 255, 0); }
-        body.main .wrapper main.users.users-profile .user-details-body, body.main .wrapper main.users.users-savings .user-details-body {
-          max-width: 1024px;
-          display: grid;
-          grid-template-columns: repeat(3, 1fr); }
+              justify-content: center;
+              margin-right: 1.6rem;
+              background-color: #cdfbeb;
+              color: #244473;
+              border-radius: 50%; }
+          body.main .wrapper main.users .container.users-profile .user-details-body, body.main .wrapper main.users .container.users-savings .user-details-body {
+            max-width: 1024px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); }
       body.main .wrapper main.transactions {
         min-height: calc(100vh - 7rem); }
         body.main .wrapper main.transactions .inner-wrapper {
@@ -1276,29 +1245,32 @@ body.main {
                 font-weight: 500; }
               body.main .wrapper main.transactions .table-filters-group .filters i {
                 color: #4e4e4e; }
-        body.main .wrapper main.transactions table tr td:first-of-type,
-        body.main .wrapper main.transactions table tr th:first-of-type {
-          padding-left: 2rem;
-          width: 6rem;
-          font-weight: 400; }
-        body.main .wrapper main.transactions table tr td:last-of-type,
-        body.main .wrapper main.transactions table tr th:last-of-type {
-          padding-right: 2 rem; }
-        body.main .wrapper main.transactions table thead {
+        body.main .wrapper main.transactions .table-container {
+          border: 1px solid rgba(36, 68, 115, 0.3);
+          border-radius: 4px;
           overflow: hidden; }
-          body.main .wrapper main.transactions table thead tr th {
+          body.main .wrapper main.transactions .table-container table tr td:first-of-type,
+          body.main .wrapper main.transactions .table-container table tr th:first-of-type {
+            padding-left: 2rem;
+            width: 6rem;
+            font-weight: 400; }
+          body.main .wrapper main.transactions .table-container table tr td:last-of-type,
+          body.main .wrapper main.transactions .table-container table tr th:last-of-type {
+            padding-right: 2rem; }
+          body.main .wrapper main.transactions .table-container table thead {
+            overflow: hidden; }
+            body.main .wrapper main.transactions .table-container table thead tr th {
+              font-size: 14px;
+              font-weight: 600;
+              text-align: start;
+              padding: 1.3rem 0; }
+          body.main .wrapper main.transactions .table-container table tbody tr td {
             font-size: 14px;
-            font-weight: 600;
-            text-align: start;
-            padding: 1.3rem 0;
-            background-color: rgba(0, 0, 0, 0.03); }
-        body.main .wrapper main.transactions table tbody tr td {
-          font-size: 14px;
-          font-weight: 500;
-          padding: 1.4rem 0; }
-          body.main .wrapper main.transactions table tbody tr td a {
-            text-decoration: none;
-            color: #244473; }
+            font-weight: 500;
+            padding: 1.4rem 0; }
+            body.main .wrapper main.transactions .table-container table tbody tr td a {
+              text-decoration: none;
+              color: #244473; }
       body.main .wrapper main.savings {
         min-height: calc(100vh - 7rem);
         padding: 1.5rem; }
@@ -1493,65 +1465,94 @@ body.main {
           padding-top: 8px;
           padding-bottom: 8px; }
       body.main .wrapper main.services .inner-wrapper {
-        padding: 3.5rem 2.5rem 0 0;
+        min-height: 0;
         background-color: white;
         display: grid;
         grid-template-columns: 29rem 1fr;
-        column-gap: 3rem; }
-        body.main .wrapper main.services .inner-wrapper .service-list .search {
+        row-gap: 0;
+        border: 1px solid rgba(36, 68, 115, 0.3);
+        border-radius: 4px; }
+        body.main .wrapper main.services .inner-wrapper .services-header {
+          padding: 0 2.5rem;
+          height: 5rem;
+          grid-column: 1 / span 2;
           display: flex;
           align-items: center;
-          height: 4rem;
-          margin: 0 2rem;
-          border: 1px solid #000000;
-          border-radius: 4px;
-          padding: 0 1.5rem; }
-          body.main .wrapper main.services .inner-wrapper .service-list .search input {
-            border: none;
-            outline: none;
-            font-family: "Montserrat";
-            font-size: 16px;
-            font-weight: 600; }
-            body.main .wrapper main.services .inner-wrapper .service-list .search input::placeholder {
-              font-family: "Montserrat";
-              font-size: 16px;
-              font-weight: 600; }
-          body.main .wrapper main.services .inner-wrapper .service-list .search i {
-            margin-right: 1.5rem; }
-        body.main .wrapper main.services .inner-wrapper .service-list ul {
-          width: 100%;
-          margin-top: 1rem; }
-          body.main .wrapper main.services .inner-wrapper .service-list ul li {
-            cursor: pointer;
-            width: 100%;
+          justify-content: space-between;
+          border-bottom: 1px solid rgba(36, 68, 115, 0.3); }
+          body.main .wrapper main.services .inner-wrapper .services-header .search {
+            height: 100%;
+            display: flex;
+            align-items: center; }
+            body.main .wrapper main.services .inner-wrapper .services-header .search i {
+              margin-right: 1rem;
+              opacity: 0.3;
+              color: #244473; }
+            body.main .wrapper main.services .inner-wrapper .services-header .search input {
+              border: none;
+              outline: none; }
+          body.main .wrapper main.services .inner-wrapper .services-header .filters {
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            padding: 1rem 2rem;
-            font-size: 14px;
+            font-size: 12px;
+            line-height: 12px;
             font-weight: 500;
-            color: #244473;
-            transition: all 150ms ease-in-out; }
-            body.main .wrapper main.services .inner-wrapper .service-list ul li i {
-              display: none;
-              color: #00ff00; }
-            body.main .wrapper main.services .inner-wrapper .service-list ul li.enabled i {
-              display: block; }
-            body.main .wrapper main.services .inner-wrapper .service-list ul li.active {
-              background-color: black;
-              color: white; }
-            body.main .wrapper main.services .inner-wrapper .service-list ul li:hover {
-              background-color: rgba(0, 0, 0, 0.05); }
+            padding: 8px 1.2rem;
+            color: #4e4e4e;
+            border: 1px solid rgba(36, 68, 115, 0.3);
+            border-radius: 3px;
+            background-color: #ffffff; }
+            body.main .wrapper main.services .inner-wrapper .services-header .filters span {
+              margin-right: 1rem; }
+        body.main .wrapper main.services .inner-wrapper .service-list {
+          border-right: 1px solid rgba(36, 68, 115, 0.3); }
+          body.main .wrapper main.services .inner-wrapper .service-list ul {
+            width: 100%;
+            margin-top: 1rem; }
+            body.main .wrapper main.services .inner-wrapper .service-list ul li {
+              cursor: pointer;
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 1rem 2rem;
+              font-size: 14px;
+              font-weight: 500;
+              color: #244473;
+              transition: all 150ms ease-in-out;
+              color: #244473; }
+              body.main .wrapper main.services .inner-wrapper .service-list ul li i {
+                display: none;
+                color: #00ff00; }
+              body.main .wrapper main.services .inner-wrapper .service-list ul li.enabled i {
+                display: block; }
+              body.main .wrapper main.services .inner-wrapper .service-list ul li.active {
+                background-color: #244473;
+                color: white; }
+              body.main .wrapper main.services .inner-wrapper .service-list ul li:hover {
+                background-color: rgba(36, 68, 115, 0.05); }
         body.main .wrapper main.services .inner-wrapper .service-details {
-          padding-top: 1rem; }
-          body.main .wrapper main.services .inner-wrapper .service-details .service-image {
-            height: 8rem;
-            width: 8rem;
-            margin-bottom: 3.5rem; }
-          body.main .wrapper main.services .inner-wrapper .service-details h2 {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 1.5rem; }
+          padding: 2.5rem; }
+          body.main .wrapper main.services .inner-wrapper .service-details-header {
+            display: flex;
+            align-items: center; }
+            body.main .wrapper main.services .inner-wrapper .service-details-header .service-image {
+              border-radius: 12px;
+              overflow: hidden;
+              height: 8rem;
+              width: 8rem; }
+            body.main .wrapper main.services .inner-wrapper .service-details-header h2 {
+              margin: 0;
+              margin-left: 2rem;
+              color: #244473;
+              font-size: 16px;
+              font-weight: 600; }
+          body.main .wrapper main.services .inner-wrapper .service-details .analytics .section-header {
+            margin-bottom: 2rem; }
+            body.main .wrapper main.services .inner-wrapper .service-details .analytics .section-header h4 {
+              color: #244473;
+              font-size: 14px;
+              font-weight: 500; }
           body.main .wrapper main.services .inner-wrapper .service-details .analytics .section-body {
             display: grid;
             grid-template-columns: 1fr 23rem 23rem;
@@ -1601,26 +1602,68 @@ body.main {
               color: white;
               background-color: black;
               font-weight: 600; }
+        body.main .wrapper main.settings .settings-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: 0 1rem 2.5rem; }
+          body.main .wrapper main.settings .settings-header h2 {
+            color: #244473;
+            font-size: 18px;
+            font-weight: bold; }
+          body.main .wrapper main.settings .settings-header .btn.add-admin {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 3.6rem;
+            width: 16rem;
+            padding: 0 2rem;
+            border-radius: 8px;
+            background-color: rgba(36, 68, 115, 0.03);
+            color: #244473;
+            font-size: 14px;
+            font-weight: 600; }
+            body.main .wrapper main.settings .settings-header .btn.add-admin i {
+              opacity: 0.3;
+              color: #244473; }
         body.main .wrapper main.settings .settings-body {
           flex-grow: 1;
           background-color: white;
-          padding: 1.5rem; }
-          body.main .wrapper main.settings .settings-body .button-row {
-            width: 100%;
-            display: flex; }
-            body.main .wrapper main.settings .settings-body .button-row.right {
-              justify-content: flex-end; }
-            body.main .wrapper main.settings .settings-body .button-row .btn {
+          border: 1px solid rgba(36, 68, 115, 0.3);
+          border-radius: 4px; }
+          body.main .wrapper main.settings .settings-body-header {
+            grid-column: 1 / span 2;
+            padding: 0 2.5rem;
+            height: 5rem;
+            grid-column: 1 / span 2;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(36, 68, 115, 0.3); }
+            body.main .wrapper main.settings .settings-body-header .search {
+              height: 100%;
+              display: flex;
+              align-items: center; }
+              body.main .wrapper main.settings .settings-body-header .search i {
+                margin-right: 1rem;
+                opacity: 0.3;
+                color: #244473; }
+              body.main .wrapper main.settings .settings-body-header .search input {
+                border: none;
+                outline: none; }
+            body.main .wrapper main.settings .settings-body-header .filters {
               display: flex;
               align-items: center;
-              justify-content: center;
-              height: 40px;
-              width: 180px;
-              margin: 1rem 0 2rem;
-              border: 2px solid #191919;
-              border-radius: 4px;
-              font-size: 14px;
-              font-weight: bold; }
+              font-size: 12px;
+              line-height: 12px;
+              font-weight: 500;
+              padding: 8px 1.2rem;
+              color: #4e4e4e;
+              border: 1px solid rgba(36, 68, 115, 0.3);
+              border-radius: 3px;
+              background-color: #ffffff; }
+              body.main .wrapper main.settings .settings-body-header .filters span {
+                margin-right: 1rem; }
           body.main .wrapper main.settings .settings-body table {
             font-size: 14px;
             font-weight: bold; }
@@ -1632,7 +1675,6 @@ body.main {
                 color: #6d7278;
                 font-weight: 500; }
         body.main .wrapper main.settings.settings-admins .settings-body {
-          min-height: calc(100vh - 7rem);
           display: grid;
           grid-template-columns: 20rem 1fr;
           column-gap: 1.6rem; }
@@ -1666,11 +1708,12 @@ body.main {
                 height: 4rem;
                 display: flex;
                 align-items: center;
-                border-bottom: 1px solid rgba(36, 68, 115, 0.3); }
+                border-bottom: 1px solid rgba(36, 68, 115, 0.3);
+                color: #244473; }
                 body.main .wrapper main.settings.settings-admins .settings-body .admin-list ul li:not(.active):hover {
-                  background-color: rgba(0, 0, 0, 0.1); }
+                  background-color: rgba(36, 68, 115, 0.1); }
                 body.main .wrapper main.settings.settings-admins .settings-body .admin-list ul li.active {
-                  background-color: #000;
+                  background-color: #244473;
                   color: white; }
           body.main .wrapper main.settings.settings-admins .settings-body .admin-details {
             padding: 3rem 2.5rem;
@@ -1687,12 +1730,13 @@ body.main {
                 align-items: center;
                 justify-content: center;
                 margin-right: 1.6rem;
-                background-color: black;
+                background-color: #244473;
                 color: white;
                 border-radius: 50%; }
               body.main .wrapper main.settings.settings-admins .settings-body .admin-details-header h2 {
                 font-size: 24px;
-                font-weight: bold; }
+                font-weight: bold;
+                color: #244473; }
             body.main .wrapper main.settings.settings-admins .settings-body .admin-details-nav {
               margin: 2.5rem 0 3.5rem;
               border-bottom: 0.5px solid rgba(36, 68, 115, 0.1);
@@ -1708,7 +1752,7 @@ body.main {
                   align-items: center;
                   justify-content: center;
                   border-radius: 2px 16px 0 2px;
-                  color: #000;
+                  color: #244473;
                   font-size: 14px;
                   font-weight: 500;
                   font-size: 14px;
@@ -1718,7 +1762,7 @@ body.main {
                     background-color: rgba(36, 68, 115, 0.23); }
                   body.main .wrapper main.settings.settings-admins .settings-body .admin-details-nav ul li.active {
                     color: white;
-                    background-color: black;
+                    background-color: #244473;
                     font-weight: 600; }
                   body.main .wrapper main.settings.settings-admins .settings-body .admin-details-nav ul li:nth-child(1) {
                     width: 8.8rem; }
@@ -1775,7 +1819,7 @@ body.main {
                 padding: 8px 3.5rem 8px 1.5rem; }
                 body.main .wrapper main.settings.settings-admins.admins-permissions .settings-body .admin-details-body ul.permissions li input.checkbox-switch + label strong {
                   opacity: 1;
-                  color: #000000;
+                  color: #244473;
                   font-size: 14px;
                   font-weight: 500;
                   line-height: 1.6rem; }

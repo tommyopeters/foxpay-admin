@@ -11,7 +11,7 @@
         margin-right: 1.5rem;
         height: 14px;
         width: 14px;
-        border: 1px solid #000000;
+        border: 1px solid #244473;
         border-radius: 3px;
         background-color: #ffffff;
         transition: all 150ms ease-in-out;
@@ -30,13 +30,13 @@
 
       &:hover {
         .checkbox-mark {
-          background-color: #0000003a;
+          background-color: #2444733a;
         }
       }
     }
     &:checked + label {
       .checkbox-mark {
-        background-color: #000000;
+        background-color: #244473;
       }
       .checkbox-mark:after {
         content: "\2714";
@@ -128,7 +128,7 @@
     color: #004ba6;
 
     span {
-      background-color: #000000;
+      background-color: $main-blue;
 
       &:before {
         transform: translateX(8px);

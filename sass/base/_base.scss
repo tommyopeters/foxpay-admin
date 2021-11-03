@@ -43,7 +43,7 @@ table {
   tr {
     td,
     th {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+      border-bottom: 1px solid rgba(36, 68, 115, 0.3);
       &:first-of-type {
         padding-left: 2.5rem;
       }
@@ -55,11 +55,12 @@ table {
   thead {
     tr {
       th {
+        color: #244473;
         font-size: 14px;
         font-weight: 600;
         text-align: start;
         padding: 1.3rem 0;
-        background-color: rgba(0, 0, 0, 0.03);
+        background-color: rgba(36, 68, 115, 0.03);
       }
     }
   }
@@ -69,7 +70,19 @@ table {
         font-size: 14px;
         font-weight: 500;
         padding: 1.4rem 0;
+        color: #4e4e4e;
       }
+    }
+  }
+}
+.table-container {
+  border: 1px solid rgba(36, 68, 115, 0.3);
+  border-radius: 4px;
+  overflow: hidden;
+  table {
+    a {
+      text-decoration: none;
+      color: $main-blue;
     }
   }
 }

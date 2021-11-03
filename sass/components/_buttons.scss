@@ -4,11 +4,12 @@
 .export-btn {
   cursor: pointer;
   display: flex;
+  height: 3.6rem;
   align-items: center;
-  height: 3.2rem;
   padding: 0 1.5rem;
   border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: rgba(36, 68, 115, 0.03);
+  color: $main-blue;
 
   span {
     font-size: 14px;
