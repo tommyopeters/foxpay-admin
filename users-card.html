@@ -135,7 +135,7 @@
     </div>
 
     <!-- MODALS -->
-    <div class="modal" id="modal" style="display: none">
+    <div class="modal" id="modal">
       <div id="slipcard-transactions-modal" class="modal-item slipcard-modals" style="display: none">
         <div class="modal-content">
           <div class="modal-header"><h2>SLIPCARD Transactions</h2></div>
@@ -305,6 +305,93 @@
             <p>User’s password has been reset and they have been sent an email to create new password</p>
             <div class="btn">Ok</div>
           </form>
+        </div>
+      </div>
+      <div id="new-agent-modal" class="modal-item" style="display: none">
+        <div class="modal-content">
+          <div class="modal-header"><h2>Invite new agent</h2></div>
+          <form class="modal-body">
+            <div class="form-group">
+              <small>First name</small>
+              <input type="text" />
+            </div>
+            <div class="form-group">
+              <small>Surname</small>
+              <input type="text" />
+            </div>
+            <div class="form-group">
+              <small>Email</small>
+              <input type="text" />
+            </div>
+            <div class="form-group">
+              <small>Mobile</small>
+              <input type="text" />
+            </div>
+            <div class="form-group">
+              <small>Location</small>
+              <input type="text" />
+            </div>
+            <div class="button-row"><button class="btn">Invite</button></div>
+          </form>
+          <div class="modal-close">&times;</div>
+        </div>
+      </div>
+      <div id="new-fee-modal" class="modal-item" style="display: none">
+        <div class="modal-content">
+          <div class="modal-header"><h2>Add New Fee</h2></div>
+          <form class="modal-body">
+            <div class="form-group">
+              <small>Name</small>
+              <input type="text" />
+            </div>
+            <div class="form-group">
+              <small>Amount</small>
+              <input type="text" />
+            </div>
+            <div class="form-group">
+              <small>Product or Service</small>
+              <input type="text" />
+            </div>
+            <div class="form-group">
+              <small>Transaction Trigger</small>
+              <input type="text" />
+            </div>
+            <div class="status-select">
+              <input type="checkbox" id="permission-2" class="checkbox-switch" />
+              <label for="permission-2"><strong>Enable</strong> <span></span></label>
+            </div>
+            <div class="button-row"><button class="btn">Invite</button></div>
+          </form>
+          <div class="modal-close">&times;</div>
+        </div>
+      </div>
+      <div id="new-commission-modal" class="modal-item">
+        <div class="modal-content">
+          <div class="modal-header"><h2>Add New Commission</h2></div>
+          <form class="modal-body">
+            <div class="form-group">
+              <small>Name</small>
+              <input type="text" />
+            </div>
+            <div class="form-group">
+              <small>Amount</small>
+              <input type="text" />
+            </div>
+            <div class="form-group">
+              <small>Product or Service</small>
+              <input type="text" />
+            </div>
+            <div class="form-group">
+              <small>Transaction Trigger</small>
+              <input type="text" />
+            </div>
+            <div class="status-select">
+              <input type="checkbox" id="permission-2" class="checkbox-switch" />
+              <label for="permission-2"><strong>Enable</strong> <span></span></label>
+            </div>
+            <div class="button-row"><button class="btn btn-grey">Cancel</button><button class="btn">Add</button></div>
+          </form>
+          <div class="modal-close">&times;</div>
         </div>
       </div>
     </div>

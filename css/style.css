@@ -69,6 +69,47 @@ table {
 .yellow-text {
   color: #e3bc6a; }
 
+form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5rem; }
+  form .form-group small {
+    opacity: 0.3;
+    color: #0f0f0f;
+    font-size: 12px;
+    margin-bottom: 6px;
+    margin-left: 5px;
+    font-weight: 500; }
+  form .form-group input {
+    width: 100%;
+    height: 4rem;
+    padding: 8px 1.2rem;
+    display: flex;
+    align-items: center;
+    border: 2px solid #244473;
+    border-radius: 6px;
+    background-color: rgba(36, 68, 115, 0.03); }
+
+form button {
+  border: none;
+  outline: none;
+  height: 4.8rem;
+  border-radius: 24px;
+  background-color: #ff6600;
+  padding: 1.3rem 2.5rem;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500; }
+  form button.btn-grey {
+    color: #7c7c7c;
+    background-color: rgba(36, 68, 115, 0.1); }
+
+form .button-row {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 .btn {
   cursor: pointer; }
 
@@ -212,7 +253,8 @@ table {
       font-size: 18px;
       font-weight: 600;
       text-align: start;
-      margin-bottom: 3rem; }
+      margin-bottom: 3rem;
+      color: #244473; }
     .modal-content .modal-close {
       position: absolute;
       top: 0px;
@@ -256,6 +298,40 @@ table {
       color: white;
       border-radius: 4px;
       background-color: #191919; }
+
+#new-fee-modal .modal-content,
+#new-commission-modal .modal-content,
+#new-agent-modal .modal-content {
+  padding: 2.5rem;
+  width: 34rem;
+  align-items: center; }
+  #new-fee-modal .modal-content form,
+  #new-commission-modal .modal-content form,
+  #new-agent-modal .modal-content form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5rem; }
+    #new-fee-modal .modal-content form .status-select,
+    #new-commission-modal .modal-content form .status-select,
+    #new-agent-modal .modal-content form .status-select {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 2.5rem; }
+      #new-fee-modal .modal-content form .status-select strong,
+      #new-commission-modal .modal-content form .status-select strong,
+      #new-agent-modal .modal-content form .status-select strong {
+        margin-right: 1rem;
+        color: #6d7278;
+        font-size: 14px;
+        font-weight: 500; }
+    #new-fee-modal .modal-content form .button-row,
+    #new-commission-modal .modal-content form .button-row,
+    #new-agent-modal .modal-content form .button-row {
+      width: 100%; }
+      #new-fee-modal .modal-content form .button-row button:not(:last-of-type),
+      #new-commission-modal .modal-content form .button-row button:not(:last-of-type),
+      #new-agent-modal .modal-content form .button-row button:not(:last-of-type) {
+        margin-right: 1.5rem; }
 
 .slipcard-modals .modal-content {
   width: 39rem;
