@@ -54,11 +54,19 @@
         </div>
       </header>
       <main class="users users-security">
-        <div class="users-nav">
+        <div class="agents-nav">
           <ul>
             <li class="active">Users</li>
             <li>Agents</li>
           </ul>
+          <div class="btn requests-review">
+            <span>Review Requests</span>
+            <span class="counter">8,434</span>
+          </div>
+          <div class="btn add-agent">
+            <span>Add Agent</span>
+            <i class="far fa-compass"></i>
+          </div>
         </div>
         <div class="container">
           <div class="users-header">
@@ -103,7 +111,22 @@
                 <li class="active">Security</li>
               </ul>
             </div>
-            <div class="user-details-body"></div>
+            <div class="user-details-body">
+              <div class="column">
+                <form action="">
+                  <h4>Transaction Limit</h4>
+                  <div class="form-group">
+                    <small>Individual Transaction Limit</small>
+                    <input type="text" />
+                  </div>
+                  <div class="button-row">
+                    <button class="btn">Update</button>
+                  </div>
+                  <h4>Password Reset</h4>
+                  <div class="reset-button"><span>Reset</span> <i class="far fa-recycle"></i></div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </main>

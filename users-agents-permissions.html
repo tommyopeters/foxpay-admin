@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/8509b10269.js"></script>
+    <title>Users</title>
+  </head>
+  <body class="main">
+    <aside>
+      <ul class="nav main-nav">
+        <li class="nav-item">
+          <i class="fal fa-analytics"></i>
+          <span>Analytics</span>
+        </li>
+        <li class="nav-item">
+          <i class="fal fa-arrows"></i>
+          <span>Transactions</span>
+        </li>
+        <li class="nav-item active">
+          <i class="fal fa-user"></i>
+          <span>Users</span>
+        </li>
+        <li class="nav-item">
+          <i class="fal fa-store"></i>
+          <span>Services</span>
+        </li>
+        <li class="nav-item">
+          <i class="fal fa-cog"></i>
+          <span>Admin</span>
+        </li>
+      </ul>
+    </aside>
+    <div class="wrapper">
+      <header>
+        <div class="empty"></div>
+        <div class="user">
+          <div class="user-image image-control"><img src="/images/person.jpg" alt="" /></div>
+          <div class="user-details">
+            <div class="name">Soji Okudugha</div>
+            <div class="role">Admin</div>
+          </div>
+          <i class="far fa-angle-down"></i>
+        </div>
+      </header>
+      <main class="users users-security">
+        <div class="agents-nav">
+          <ul>
+            <li class="active">Users</li>
+            <li>Agents</li>
+          </ul>
+          <div class="btn requests-review">
+            <span>Review Requests</span>
+            <span class="counter">8,434</span>
+          </div>
+          <div class="btn add-agent">
+            <span>Add Agent</span>
+            <i class="far fa-compass"></i>
+          </div>
+        </div>
+        <div class="container">
+          <div class="users-header">
+            <div class="search">
+              <i class="far fa-search"></i>
+              <input type="text" placeholder="Search" />
+            </div>
+          </div>
+          <div class="user-list">
+            <ul>
+              <li class="active">Cooper Osborn</li>
+              <li>Ishaq Obrien</li>
+              <li>Ariella Mcclain</li>
+              <li>Abida Bellamy</li>
+              <li>Muna Dolan</li>
+              <li>Gianni Mcgowan</li>
+              <li>Aleyna Nichols</li>
+              <li>Menna Petersen</li>
+              <li>Nell Easton</li>
+              <li>Axl Hollis</li>
+              <li>Kajol Gregory</li>
+              <li>Wojciech Kramer</li>
+              <li>Jose Bassett</li>
+              <li>Falak Boyer</li>
+              <li>Samira Pittman</li>
+              <li>Cillian Fitzpatrick</li>
+              <li>Issac Calhoun</li>
+              <li>Jean Thorpe</li>
+              <li>Raisa Lindsay</li>
+              <li>Flora Rowe</li>
+            </ul>
+          </div>
+          <div class="user-details">
+            <div class="user-details-header">
+              <h2 class="user-details-name">Pade Omotosho</h2>
+            </div>
+            <div class="user-details-nav">
+              <ul>
+                <li>Profile</li>
+                <li>Transactions</li>
+                <li>Card</li>
+                <li class="active">Permissions</li>
+                <li>Security</li>
+              </ul>
+            </div>
+            <div class="user-details-body agents-permissions-body">
+              <div class="column">
+                <div class="column-header">
+                  <h4>Allowed Services</h4>
+                  <div class="column-header-btn btn">
+                    <span>Disable All</span>
+                    <i class="fal fa-store"></i>
+                  </div>
+                </div>
+                <div class="search">
+                  <i class="fas fa-search"></i>
+                  <input type="text" />
+                </div>
+                <ul class="permissions">
+                  <li>
+                    <div class="status-select">
+                      <input type="checkbox" id="permission-1" class="checkbox-switch" />
+                      <label for="permission-1"><strong>9mobile Data Bundles</strong> <span></span></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="status-select">
+                      <input type="checkbox" id="permission-1" class="checkbox-switch" />
+                      <label for="permission-1"><strong>9mobile Prepaid Payments</strong> <span></span></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="status-select">
+                      <input type="checkbox" id="permission-1" class="checkbox-switch" />
+                      <label for="permission-1"><strong>Airtel Postpaid Corporation</strong> <span></span></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="status-select">
+                      <input type="checkbox" id="permission-1" class="checkbox-switch" />
+                      <label for="permission-1"><strong>Airtel Data Bundles</strong> <span></span></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="status-select">
+                      <input type="checkbox" id="permission-1" class="checkbox-switch" />
+                      <label for="permission-1"><strong>DSTV Box Office Wallet Topup</strong> <span></span></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="status-select">
+                      <input type="checkbox" id="permission-1" class="checkbox-switch" />
+                      <label for="permission-1"><strong>DSTV Subscription</strong> <span></span></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="status-select">
+                      <input type="checkbox" id="permission-1" class="checkbox-switch" />
+                      <label for="permission-1"><strong>GOTV Subscription</strong> <span></span></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="status-select">
+                      <input type="checkbox" id="permission-1" class="checkbox-switch" />
+                      <label for="permission-1"><strong>Glo Data Bundles</strong> <span></span></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="status-select">
+                      <input type="checkbox" id="permission-1" class="checkbox-switch" />
+                      <label for="permission-1"><strong>Glo E-PINS via SMS</strong> <span></span></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="status-select">
+                      <input type="checkbox" id="permission-1" class="checkbox-switch" />
+                      <label for="permission-1"><strong>IPNX Subscription Payment</strong> <span></span></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="status-select">
+                      <input type="checkbox" id="permission-1" class="checkbox-switch" />
+                      <label for="permission-1"><strong>IrokoTV</strong> <span></span></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="status-select">
+                      <input type="checkbox" id="permission-1" class="checkbox-switch" />
+                      <label for="permission-1"><strong>Linda Ikeji TV</strong> <span></span></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="status-select">
+                      <input type="checkbox" id="permission-1" class="checkbox-switch" />
+                      <label for="permission-1"><strong>MTN Mobile data Plan</strong> <span></span></label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="column">
+                <div class="column-header">
+                  <h4>Allowed Locations</h4>
+                  <div class="column-header-btn btn">
+                    <span>Disable All</span>
+                    <i class="fal fa-map-pin"></i>
+                  </div>
+                </div>
+                <div class="search">
+                  <i class="fas fa-search"></i>
+                  <input type="text" />
+                </div>
+                <ul class="permissions">
+                  <li>
+                    <div class="status-select">
+                      <input type="checkbox" id="permission-1" class="checkbox-switch" />
+                      <label for="permission-1">Abia</strong> <span></span></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="status-select">
+                      <input type="checkbox" id="permission-1" class="checkbox-switch" />
+                      <label for="permission-1">Adamawa</strong> <span></span></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="status-select">
+                      <input type="checkbox" id="permission-1" class="checkbox-switch" />
+                      <label for="permission-1">Bauchi</strong> <span></span></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="status-select">
+                      <input type="checkbox" id="permission-1" class="checkbox-switch" />
+                      <label for="permission-1">Bayelsa</strong> <span></span></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="status-select">
+                      <input type="checkbox" id="permission-1" class="checkbox-switch" />
+                      <label for="permission-1">Delta</strong> <span></span></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="status-select">
+                      <input type="checkbox" id="permission-1" class="checkbox-switch" />
+                      <label for="permission-1">Gombe</strong> <span></span></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="status-select">
+                      <input type="checkbox" id="permission-1" class="checkbox-switch" />
+                      <label for="permission-1">Abia</strong> <span></span></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="status-select">
+                      <input type="checkbox" id="permission-1" class="checkbox-switch" />
+                      <label for="permission-1">Adamawa</strong> <span></span></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="status-select">
+                      <input type="checkbox" id="permission-1" class="checkbox-switch" />
+                      <label for="permission-1">Bauchi</strong> <span></span></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="status-select">
+                      <input type="checkbox" id="permission-1" class="checkbox-switch" />
+                      <label for="permission-1">Bayelsa</strong> <span></span></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="status-select">
+                      <input type="checkbox" id="permission-1" class="checkbox-switch" />
+                      <label for="permission-1">Delta</strong> <span></span></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="status-select">
+                      <input type="checkbox" id="permission-1" class="checkbox-switch" />
+                      <label for="permission-1">Gombe</strong> <span></span></label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="status-select">
+                      <input type="checkbox" id="permission-1" class="checkbox-switch" />
+                      <label for="permission-1">Abia</strong> <span></span></label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="./js/app.js"></script>
+    <!-- <script src="./js/vue.js"></script> -->
+  </body>
+</html>

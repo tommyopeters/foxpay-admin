@@ -819,7 +819,46 @@ body.main {
                   align-items: center;
                 }
               }
+              form {
+                min-width: 30rem;
+                h4 {
+                  color: $main-blue;
+                  font-size: 14px;
+                  font-weight: 500;
+                  margin-top: 2.5rem;
+                  margin-bottom: 2rem;
+                }
+                .button-row {
+                  button.btn {
+                    padding: 6px 6rem !important;
+                  }
+                }
+                .reset-button {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
 
+                  cursor: pointer;
+
+                  padding: 1rem 3rem;
+
+                  height: 36px;
+                  width: 142px;
+                  border-radius: 8px;
+                  background-color: rgba(36, 68, 115, 0.03);
+
+                  span {
+                    color: $main-blue;
+                    font-size: 14px;
+                    font-weight: 500;
+                  }
+                  i {
+                    opacity: 0.3;
+                    color: $main-blue;
+                    font-size: 16px;
+                  }
+                }
+              }
               &.card-body {
                 .status-select {
                   margin-top: 3rem;
@@ -868,6 +907,82 @@ body.main {
 
                     font-size: 16px;
                     font-weight: bold;
+                  }
+                }
+              }
+              &.agents-permissions-body {
+                display: flex;
+                justify-content: space-between;
+
+                .column {
+                  min-width: 38rem;
+                  &-header {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    h4 {
+                      color: $main-blue;
+                      font-size: 16px;
+                      font-weight: 600;
+                    }
+                    .btn {
+                      border-radius: 8px;
+                      background-color: $main-blue;
+                      padding: 1rem;
+
+                      color: #ffffff;
+                      font-size: 14px;
+                      font-weight: 600;
+
+                      i {
+                        margin-left: 1rem;
+                      }
+                    }
+                  }
+                  .search {
+                    margin-bottom: 2.5rem;
+                    border: 1px solid rgba(36, 68, 115, 0.28);
+                    border-radius: 4px;
+                    background-color: rgba(36, 68, 115, 0);
+                    padding: 1rem 1.5rem;
+                    i {
+                      margin-right: 1rem;
+                      opacity: 0.3;
+                      color: $main-blue;
+                      font-size: 16px;
+                    }
+                    input {
+                      border: none;
+                      outline: none;
+                      color: $main-blue;
+                      font-size: 14px;
+                      font-weight: 500;
+                    }
+                  }
+                  ul.permissions {
+                    li {
+                      width: 100%;
+                      padding: 8px 1.5rem;
+
+                      &:nth-of-type(odd) {
+                        background-color: #f8f9fa;
+                      }
+
+                      .status-select {
+                        strong {
+                          color: $main-blue;
+                          font-size: 14px;
+                          font-weight: 500;
+                        }
+                        label {
+                          width: 100%;
+                          display: flex;
+                          justify-content: space-between;
+                        }
+                      }
+                    }
                   }
                 }
               }
